@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="top-bar">
-        <h1>My Website</h1>
+        <h1>Git Test Commit</h1>
     </header>
     <div class="sidebar">
         <h2>Sections</h2>
