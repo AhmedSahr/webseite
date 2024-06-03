@@ -1,0 +1,153 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #ffe4c4;
+}
+
+.status-box {
+    position: absolute;
+    top: 300px; /* Adjust as needed */
+    padding-left: 1200px;
+    font-size: 20px;
+    background-color: rgba(211, 211, 211, 0);
+}
+
+.background-image {
+    position: absolute;
+    width: 11%;
+    background-size: cover;
+    margin-right: 360px;
+    margin-top: -19px;
+    z-index: 1; /* Ensure the background is behind other elements */
+}
+.Anleitung{
+margin-top: 100px;
+width: 100%;
+
+}
+.background-image2 {
+    position: absolute;
+    width: 11%;
+    background-size: cover;
+    margin-left: 1170px;
+    margin-top: -20px;
+    z-index: 1; /* Ensure the background is behind other elements */
+}
+
+.background-image3 {
+    position: absolute;
+    width: 400px;
+    height: 900px;
+    margin-left: 180px;
+    margin-top: -100px;
+    z-index: -2; /* Ensure the background is behind other elements */
+}
+
+.overlay-box {
+    position: absolute;
+    margin-top: 690px;
+    margin-right: 740px;
+    width: 32%; /* Adjust width as needed */
+    height: 55%; /* Adjust height as needed */
+    z-index: 2; /* Ensure the box is above the image */
+    border: 2px;
+    font-size: 21px;
+}
+
+
+.traffic-lights-container {
+    display: flex;
+    justify-content: space-between; /* Align items with space between */
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+}
+
+.light {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: grey;
+    padding: 21px;
+    margin-left: 500px;
+    margin-right: 100px;
+    margin-bottom: 8px;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-left: 1170px;
+    margin-top: -50px;
+    background-color: rgb(238, 255, 46);
+}
+
+.pre-box {
+    width: 45%; /* Each pre takes 45% of the screen width */
+    display: inline-block; /* Make pre elements inline-block */
+    vertical-align: top; /* Align pre elements to the top */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 10px; /* Add padding as needed */
+    margin: 5px; /* Add margin for spacing */
+}
+
+
+.Car {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -30px; /* Adjusted margin to center the smaller car */
+    width: 200px;
+    z-index: -2;
+    animation: moveUpDown 5s infinite; /* Define the animation */
+    animation-play-state: running; /* Start the animation running */
+}
+
+.Carimage {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -30px; /* Adjusted margin to center the smaller car */
+    width: 200px;
+    z-index: -2;
+}
+
+.stopped {
+    transform: translateY(-250px); /* Set the position where you want to stop */
+    animation-play-state: paused;
+    animation: none;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(800px);
+    }
+    100% {
+        transform: translateY(-1000px);
+    }
+}
+
+
+
+button {
+    margin-top: 20px;
+}

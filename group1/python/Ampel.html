@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verkehrslicht-Simulation</title>
+    <link rel="stylesheet" href="Ampel.css">
+
+</head>
+<body>
+    <!-- Your existing content here -->
+
+    <img src="Bilder/Ample.png" class="background-image" alt="Background Image">
+    <img src="Bilder/Ample2.png" class="background-image2" alt="Background Image2">
+    <img src="Bilder/Strasse.png" class="background-image3" alt="Background Image3">
+
+
+    <div id="status-box" class="status-box">Message goes here</div>
+
+    <div class="traffic-lights-container">
+        <div class="traffic-light" id="car-traffic-light">
+            <div class="light" id="car-light-red"></div>
+            <div class="light" id="car-light-yellow"></div>
+            <div class="light" id="car-light-green"></div>
+        </div>
+
+        <div class="traffic-light" id="ped-traffic-light">
+            <div class="light red" id="ped-light-red"></div>
+            <div class="light" id="ped-light-green"></div>
+        </div>
+    </div>
+
+    <button id="walk-button" onclick="changeLights()">Gehen</button>
+
+    <div id="Car" class="Car"><img src="Bilder/Car.png" alt="Car" class="Carimage"></div>
+
+
+<br><br><br><br>
+
+    <div class="overlay-box">
+        Anleitung: <br> <br> ● Autoampel Anleitungsstatus Zwichen Rot,Gelb und Grün <br><br>
+        ● Autoampel Anleitungsstatus von Rot, Fußgängerampel von Rot zu Grün,
+        im Gegensatz zur Autoampel <br><br>
+        ● Hindernisdetektor-Modul erkennt Objekte 
+        und startet Umschaltung der Ampeln <br><br>
+        ● Servomotor besitzt Schranke, die an diesem befestigt ist <br><br>
+        ● Servomotor bewegt Objekt über den Sensor und zurück in Startposition
+    </div> 
+
+    <img src="Bilder/AnLeitung.jpg" alt="Anleitung" class="Anleitung">
+
+
+
+    <img src="Bilder/Code.png" alt="Anleitung" class="Anleitung">
+
+
+
+    <script src="Ampel.js"></script>
+</body>
+</html>
