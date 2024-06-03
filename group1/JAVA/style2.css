@@ -1,0 +1,167 @@
+
+
+
+h1 {
+  position: relative;
+  font-size: 6rem;
+  color: rgb(255, 3, 200);
+  font-family: monospace;
+  text-align: center;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from { font-size: 3rem; }
+  to { font-size: 3.5rem; }
+}
+
+body{
+  background-color: #000000;
+}
+
+
+ 
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: fixed;
+  animation: moveBall 5s infinite linear;
+}
+
+@keyframes moveBall {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: calc(100vw - 50px);
+  }
+  50% {
+    top: calc(100vh - 50px);
+    left: calc(100vw - 50px);
+  }
+  75% {
+    top: calc(100vh - 50px);
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: row; /* In Reihen anordnen */
+  
+}
+
+
+.erklaerung {
+  --border-width: 3px;
+  position: relative;
+  width: 400px; /* Anpassung der Breite */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+  color: white;
+  background: #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: var(--border-width);
+  border-radius: 50px;
+  padding: 2em;
+  margin-top: 1cm;
+  margin-right: 1cm; /* Neu: Margin-Rechts hinzugefügt */
+  right: 0; /* Neu: Text rechts ausrichten */
+}
+
+.erklaerung::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(
+    60deg,
+    hsl(17, 95%, 45%),
+    hsl(240, 6%, 97%),
+    hsl(46, 85%, 66%),
+    hsl(46, 87%, 45%),
+    hsl(14, 100%, 48%),
+    hsl(40, 91%, 78%),
+    hsl(29, 98%, 49%),
+    hsl(0, 0%, 100%)
+  );
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+  50% {
+      background-position: 100% 50%;
+  }
+}
+
+
+.ping_pong {
+  display: flex;
+  margin-top: 1cm;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border: 3px solid rgb(255, 0, 0);
+  border-radius: 150px;
+}
+
+.ping_pong:hover {
+  border-color: rgb(7, 255, 214);
+}
+
+.start-button {
+  position: absolute;
+  top: 50%;
+  left: 24.6%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  background-color:rgb(65, 63, 61);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 30px;
+  color:rgb(247, 0, 255);
+  font-weight: bold;
+  text-align: center;
+  font-family: monospace;
+  cursor: pointer;
+  z-index: 1; /* Stellen sicher, dass der Button über dem Bild liegt */
+}
+
+#info {
+  position: absolute;
+  display: flex;
+  bottom: 5em;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+#homebutton {
+  display: flex;
+  background: white;
+  color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}

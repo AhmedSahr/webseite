@@ -1,0 +1,25 @@
+body {
+    background: url('cbg.jpg') no-repeat center center;
+    background-size:auto;
+  }
+.container{
+    position: relative;
+}
+
+.paragraph1{
+    position: absolute;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    top: 50px;
+    left: 50px;
+}
+
+.paragraph2{
+    position: absolute;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    top: 100px;
+    left: 100px;
+}
