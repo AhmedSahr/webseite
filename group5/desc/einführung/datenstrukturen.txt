@@ -1,0 +1,11 @@
+C gibt einem die Möglichkeit auf einem sehr präzisen Level den Speicher zu verwalten.<br>
+<br>
+Dazu kann man folgende Konzepte benutzen.<br>
+<br>
+Arrays: Ein Array ist eine Sammlung von Elementen desselben Datentyps, die in aufeinanderfolgenden Speicherplätzen gespeichert sind. Arrays ermöglichen den Zugriff auf einzelne Elemente über einen Index.<br>
+<br>
+Strukturen (struct): Eine Struktur ist eine Sammlung von Variablen unterschiedlicher Datentypen, die unter einem Namen zusammengefasst sind. Strukturen ermöglichen die Organisation von Daten in einem einzigen Objekt.<br>
+<br>
+Zeiger (Pointer): Ein Zeiger ist eine spezielle Variable, die die Adresse einer anderen Variablen im Speicher enthält. Zeiger werden häufig verwendet, um auf andere Variablen oder Datenstrukturen zuzugreifen und diese zu manipulieren.<br>
+<br>
+Listen: Eine Liste ist eine Datenstruktur, die eine geordnete Sequenz von Elementen speichert. Es gibt verschiedene Arten von Listen, wie z.B. verkettete Listen und Arrays. Listen ermöglichen das Hinzufügen, Entfernen und Durchsuchen von Elementen.<br>

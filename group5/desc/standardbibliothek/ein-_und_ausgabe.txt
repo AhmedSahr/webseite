@@ -1,0 +1,9 @@
+    Ein- und Ausgabe (E/A) in C ermöglicht es, Daten von der Tastatur einzulesen und auf dem Bildschirm auszugeben. Dies geschieht mithilfe der Standardfunktionen <code>printf()</code> und <code>scanf()</code>.<br>
+    <br>
+    Ausgabe:<br>
+    Die <code>printf()</code>-Funktion wird verwendet, um Daten auf dem Bildschirm auszugeben. Sie akzeptiert einen Formatierungsstring und optional weitere Argumente, die in den Formatierungsstring eingefügt werden. Zum Beispiel: <code>printf("Hallo, Welt!\n");</code> gibt den Text "Hallo, Welt!" gefolgt von einem Zeilenumbruch aus.<br>
+    <br>
+    Eingabe:<br>
+    Die <code>scanf()</code>-Funktion wird verwendet, um Daten von der Tastatur einzulesen. Sie akzeptiert einen Formatierungsstring, der angibt, wie die eingelesenen Daten interpretiert werden sollen, sowie Adressen von Variablen, in die die eingelesenen Daten gespeichert werden sollen. Zum Beispiel: <code>scanf("%d", &zahl);</code> liest eine Ganzzahl von der Tastatur und speichert sie in der Variable <code>zahl</code>.<br>
+    <br>
+    Ein- und Ausgabe in C sind grundlegende Konzepte, die es ermöglichen, mit Benutzern zu interagieren und Daten zu verarbeiten.

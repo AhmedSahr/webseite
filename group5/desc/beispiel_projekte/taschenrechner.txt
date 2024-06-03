@@ -1,0 +1,45 @@
+<pre>
+#include <stdio.h>
+
+int main() {
+    char operator;
+    double num1, num2, result;
+
+    // Eingabe der Operation
+    printf("Geben Sie eine Operation ein (+, -, *, /): ");
+    scanf("%c", &operator);
+
+    // Eingabe der Zahlen
+    printf("Geben Sie zwei Zahlen ein: ");
+    scanf("%lf %lf", &num1, &num2);
+
+    // Berechnung basierend auf dem Operator
+    switch(operator) {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            if(num2 != 0)
+                result = num1 / num2;
+            else {
+                printf("Fehler: Division durch Null nicht erlaubt.");
+                return 1; // Fehlercode zurückgeben
+            }
+            break;
+        default:
+            printf("Ungültiger Operator!");
+            return 1; // Fehlercode zurückgeben
+    }
+
+    // Ausgabe des Ergebnisses
+    printf("Ergebnis: %.2lf", result);
+
+    return 0; // Erfolgscode zurückgeben
+}
+</pre>

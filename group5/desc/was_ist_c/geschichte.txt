@@ -1,0 +1,11 @@
+    Die C-Sprache wurde in den 1970er Jahren von Dennis Ritchie am Bell Labs entwickelt.<br>
+    <br>
+    Ursprünglich als Systemprogrammiersprache konzipiert, wurde C schnell populär und fand breite Anwendung in verschiedenen Bereichen der Softwareentwicklung.<br>
+    <br>
+    C wurde oft in der Entwicklung von Betriebssystemen wie Unix eingesetzt und ist für seine Portabilität und Effizienz bekannt.<br>
+    <br>
+    In den 1980er Jahren wurde eine Standardisierung von C durchgeführt, was zur Entwicklung des ANSI C-Standards führte.<br>
+    <br>
+    C hat im Laufe der Jahre mehrere Revisionen und Weiterentwicklungen erfahren, darunter C89, C99 und C11, wobei jedes Update neue Funktionen und Verbesserungen brachte.<br>
+    <br>
+    Heute bleibt C eine der am weitesten verbreiteten und einflussreichsten Programmiersprachen und bildet die Grundlage vieler moderner Programmiersprachen.<br>

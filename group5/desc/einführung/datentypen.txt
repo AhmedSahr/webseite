@@ -1,0 +1,15 @@
+
+In C gibt es nur ganz grundlegende Datentypen in denen man unterschiedliche Zahlenbereiche Speichern kann.<br>
+<br>
+int: Der Datentyp int wird verwendet, um ganze Zahlen ohne Dezimalstellen zu speichern. Zum Beispiel: 5, -10, 1000.<br>
+<br>
+float: Der Datentyp float wird verwendet, um Gleitkommazahlen (Zahlen mit Dezimalstellen) zu speichern. Zum Beispiel: 3.14, 2.5, -0.003.<br>
+<br>
+double: Der Datentyp double wird ebenfalls verwendet, um Gleitkommazahlen zu speichern, aber im Vergleich zu float kann double größere Zahlen mit höherer Genauigkeit speichern.<br>
+<br>
+char: Der Datentyp char wird verwendet, um einzelne Zeichen zu speichern, wie Buchstaben, Zahlen oder Sonderzeichen. Zum Beispiel: 'a', '5', '$'.<br>
+<br>
+void: Der Datentyp void wird verwendet, um keine Wertdaten anzugeben. Er wird oft für Funktionen verwendet, die keinen Rückgabewert haben, oder für Zeiger auf unbekannte Typen.<br>
+<br>
+Diese Datentypen bilden die grundlegenden Bausteine für die Speicherung verschiedener Arten von Daten in C. Sie können je nach Bedarf kombiniert und modifiziert werden, um komplexere Datenstrukturen zu erstellen.<br>
+<br>

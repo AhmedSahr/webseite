@@ -1,0 +1,39 @@
+<p1>
+
+</p1>
+<pre>
+#include <stdio.h> /* fuer ein und ausgabe */
+#include <stdlib.h>
+#include <assert.h> /* überprüfen von werten */
+#include <unistd.h> /* fuer STDIN_FILENO, die standard eingabe datei */
+
+/* funktion fuer  das ermitteln der dateigroesse */
+int get_file_size(int fd)
+{
+
+    int size = lseek(fd, 0, SEEK_END);
+    lseek(fd, 0, SEEK_SET); /* zeiger zurueksetzen */
+    return size;
+}
+
+/* haupteinstiegspunkt */
+int main(int argc,  char **argv)
+{
+    if (argc > 2) {
+        printf("bitte dateinamen angeben!");
+        return 1;
+    }
+
+    fd = open(argv[1], "r");
+    assert(fd > 0); /* konnte datei oeffnen? */   
+    int file_size = get_file_size(fd);
+    
+    char *content = malloc(file_size + 1);
+    read(fd, content, file_size)
+    content[file_size] = 0; /* string terminieren */
+    printf("\n%s\n", content); /* string ausgeben */
+    close(fd);
+
+    return 0;
+}
+</pre>

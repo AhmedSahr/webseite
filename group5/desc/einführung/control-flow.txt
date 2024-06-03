@@ -1,0 +1,27 @@
+    Kontrollflussstrukturen in C steuern den Ablauf eines Programms, indem sie entscheiden, welche Anweisungen ausgeführt werden sollen und in welcher Reihenfolge.<br>
+    <br>
+    <code>if</code>-Anweisung:<br>
+    Die <code>if</code>-Anweisung ermöglicht die bedingte Ausführung von Code, abhängig von einem Ausdruck.<br>
+    <code>if (bedingung) {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; // Code, der ausgeführt wird, wenn die Bedingung wahr ist<br>
+    }</code><br>
+    <br>
+    <code>else</code>-Anweisung:<br>
+    Die <code>else</code>-Anweisung ermöglicht die Ausführung von Code, wenn die Bedingung in einem vorherigen <code>if</code>-Block falsch ist.<br>
+    <code>else {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; // Code, der ausgeführt wird, wenn die vorherige Bedingung falsch ist<br>
+    }</code><br>
+    <br>
+    <code>while</code>-Schleife:<br>
+    Die <code>while</code>-Schleife führt einen Block von Code so lange aus, wie eine Bedingung wahr ist.<br>
+    <code>while (bedingung) {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; // Code, der wiederholt ausgeführt wird, solange die Bedingung wahr ist<br>
+    }</code><br>
+    <br>
+    <code>for</code>-Schleife:<br>
+    Die <code>for</code>-Schleife ermöglicht die wiederholte Ausführung eines Blocks von Code für eine bestimmte Anzahl von Iterationen.<br>
+    <code>for (initialisierung; bedingung; aktualisierung) {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; // Code, der wiederholt ausgeführt wird, solange die Bedingung wahr ist<br>
+    }</code><br>
+    <br>
+    Kontrollflussstrukturen sind grundlegend für die Steuerung des Programmflusses und ermöglichen die Implementierung von bedingter Logik und Schleifen in C.

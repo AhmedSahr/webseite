@@ -1,0 +1,13 @@
+    Funktionen in C sind Codeblöcke, die eine spezifische Aufgabe ausführen. Sie akzeptieren Eingabeparameter, führen eine Verarbeitung durch und geben möglicherweise einen Wert zurück.<br>
+    <br>
+    Syntax:<br>
+    <code>RÜCKGABETYP FUNKTIONSNAME(PARAMETER)</code><br>
+    <br>
+    Beispiel:<br>
+    <code>int addiere(int a, int b) {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return a + b;<br>
+    }</code><br>
+    <br>
+    Diese Funktion namens "addiere" akzeptiert zwei Parameter vom Typ "int" und gibt ihre Summe zurück.<br>
+    <br>
+    Funktionen ermöglichen eine modulare und wiederverwendbare Programmierung in C.

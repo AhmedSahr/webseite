@@ -1,0 +1,142 @@
+
+<p1>
+Dieses Programm ist funktional  ähnlich wie der vorherige Befehl, nur mit dem Unterschied,<br>
+dass die Datei aus dem Netzwerk empfangen wird.
+</p1>
+
+<pre>
+/* CC=gcc */
+/* CFLAGS=-Wall -std=c23 */
+
+/* Author: Francisco Fischer
+ * Class: ITA18
+ * Tutor: Hr. Irrgang
+ * Abstract: this programm opens a socket connection and reads from it until
+ * the connection is reset by the peer
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include <assert.h>
+#include <netinet/in.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+
+constexpr char OPT_STRING[] = "ha:p:o:";
+constexpr short DEFAULT_PORT = 2424;
+constexpr int END_OF_STREAM = 0;
+constexpr int SOCKET_READ_CHUNK = 256;
+constexpr int SERVER_BACKLOG = 32;
+
+enum cli_flag_vals {
+	ADDR_FLAG = 'a',
+	HELP_FLAG = 'h',
+	OUTF_FLAG = 'o',
+	PORT_FLAG = 'p',
+};
+
+#define assert_syscall(sc) assert_syscall_impl(#sc, sc)
+
+void print_options(void)
+{
+	puts("a: specify the address on which the server listens");
+	puts("h: print this help screen");
+	puts("p: specify a port on which the server listens (default is 2424)");
+}
+void assert_syscall_impl(char *call, int ret) {
+	if (ret < 0) {
+		printf("syscall failed: %s => %s\n", call, strerror(errno));
+		exit(EXIT_FAILURE);
+	}
+}
+
+int main(int argc, char **argv)
+{
+	int server_socket, connection_socket;
+	struct sockaddr_in server_addr, client_addr;
+	char *buffer = NULL;
+	int buff_size = SOCKET_READ_CHUNK;
+	int msg_len = 0;
+	int chunk_len = 0; /* each effective chunk size */
+	FILE *outfile = NULL;
+
+	server_addr.sin_family = AF_INET;
+	server_addr.sin_addr.s_addr = inet_addr("127.0.0.1"); /* default addr */
+	server_addr.sin_port = htons(DEFAULT_PORT);
+	
+	/* open network-socket */
+	assert_syscall((server_socket = socket(AF_INET, SOCK_STREAM, 0)));
+
+	/* get command line parameters */	
+	for (int opt = 0; opt != -1; opt = getopt(argc, argv, OPT_STRING)) {
+		switch (opt) {
+			case ADDR_FLAG:
+				assert(0 != strtoul(optarg, NULL, 10));
+				server_addr.sin_addr.s_addr = inet_addr(optarg);
+				break;
+			case HELP_FLAG:
+				print_options();
+				return EXIT_SUCCESS;
+			case PORT_FLAG:
+				assert(0 != strtoul(optarg, NULL, 10));
+				server_addr.sin_port = htons(strtoul(optarg, NULL, 10));
+				break;
+			case OUTF_FLAG:
+				outfile = fopen(optarg, "w+");
+				assert(NULL != outfile);
+				break;
+			case '?':
+				fprintf(stderr, "unknown option:%d\n", opt);
+				return EXIT_FAILURE;
+		}
+	} 
+
+	/* if the outfile is NULL it hasn't been passed by the cli */
+
+	if (NULL == outfile) {
+		outfile = fopen("a.out", "w+");
+		assert(NULL != outfile);
+	}
+	
+	/* bind the address to the socket */
+	assert_syscall(bind(server_socket, (struct sockaddr *)&server_addr, sizeof(server_addr)));
+	assert_syscall(listen(server_socket, SERVER_BACKLOG));
+    
+	/* listen for incoming connections */
+	printf("waiting for connections...");
+	fflush(stdout); /* flush stdout buffer */
+    
+	assert_syscall((connection_socket = accept(server_socket, (struct sockaddr *)&client_addr, &(socklen_t) {sizeof(client_addr)})));
+	printf("\nconnection from: %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
+	/* allocate space for the buffer */
+	buffer = calloc(buff_size, 1);
+
+	/* read from socket stream until the peer resets the connection */
+	while (END_OF_STREAM !=
+			(chunk_len = read(connection_socket, &buffer[msg_len], SOCKET_READ_CHUNK))) {
+		buff_size += SOCKET_READ_CHUNK;
+		msg_len += chunk_len;
+		buffer = realloc(buffer, buff_size);
+	}
+
+	/* zero terminate the string */
+	buffer[msg_len + 1] = '\0';
+	fprintf(outfile, "%s\n", buffer);
+
+	/* close the sockets */
+	close(connection_socket);
+	close(server_socket);
+
+	/* close output file */
+	fclose(outfile);
+	/* return the allocated space to the operating system */	
+	free(buffer);
+
+	return EXIT_SUCCESS;
+}
+</pre>

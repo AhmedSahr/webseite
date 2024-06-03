@@ -1,0 +1,19 @@
+    C hat in der Programmierungs industrie die verschiedensten anwendungsbereiche.
+    <br><br>
+    Systemprogrammierung: C wird oft für die Entwicklung von Betriebssystemen, Treibern und anderen Systemprogrammen verwendet, da es eine hohe Leistung und eine enge Kontrolle über die Hardware ermöglicht.<br>
+    <br>
+    Embedded Systems: Aufgrund seiner Effizienz und Portabilität wird C häufig für die Programmierung von Embedded Systems verwendet, wie z.B. in Mikrocontrollern, eingebetteten Systemen in der Automobilindustrie und IoT-Geräten.<br>
+    <br>
+    Anwendungssoftware: C wird für die Entwicklung von Anwendungssoftware eingesetzt, insbesondere bei Anwendungen, die eine hohe Leistung erfordern, wie z.B. Multimedia-Anwendungen, Spiele und Grafiksoftware.<br>
+    <br>
+    Compilerbau und Interpreter: Die meisten Compiler und Interpreter für andere Programmiersprachen werden in C entwickelt, da es eine hohe Portabilität und Effizienz bietet.<br>
+    <br>
+    Datenbanken: Obwohl viele moderne Datenbanken in Sprachen wie Java oder Python geschrieben sind, werden Teile der Datenbank-Engines oft in C entwickelt, um eine hohe Leistung zu gewährleisten.<br>
+    <br>
+    Netzwerkprogrammierung: C wird für die Entwicklung von Netzwerkprotokollen, Servern und Client-Anwendungen verwendet, da es direkten Zugriff auf Netzwerkfunktionen bietet und eine effiziente Datenverarbeitung ermöglicht.<br>
+    <br>
+    Betriebssysteme: C wird oft für die Entwicklung von Betriebssystemen und Low-Level-Systemsoftware verwendet, da es direkten Zugriff auf die Hardware ermöglicht und eine enge Kontrolle über die Systemressourcen bietet.<br>
+    <br>
+    Wissenschaftliche Berechnungen: Aufgrund seiner Geschwindigkeit und Effizienz wird C häufig für wissenschaftliche Berechnungen und Simulationen in Bereichen wie Physik, Chemie und Ingenieurwissenschaften eingesetzt.<br>
+    <br>
+    Echtzeit-Systeme: C wird für die Entwicklung von Echtzeit-Systemen verwendet, wie z.B. in der Luft- und Raumfahrt, Automobilindustrie und Industriesteuerung, da es deterministische Leistung und eine präzise Steuerung ermöglicht.<br>

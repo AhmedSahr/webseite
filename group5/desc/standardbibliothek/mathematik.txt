@@ -1,0 +1,14 @@
+    
+    Mathematische Funktionen in der standard bibliothek math.h
+    <p>Die <code>math.h</code>-Bibliothek in C enthält eine Sammlung von mathematischen Funktionen, die für die Verarbeitung numerischer Daten verwendet werden können. Hier sind einige grundlegende Funktionen:</p>
+    <p>sin(x): Berechnet den Sinus des Winkels <em>x</em> im Bogenmaß.<br>
+    cos(x): Berechnet den Kosinus des Winkels <em>x</em> im Bogenmaß.<br>
+    tan(x): Berechnet den Tangens des Winkels <em>x</em> im Bogenmaß.<br>
+    exp(x): Berechnet die Exponentialfunktion von <em>x</em>, d.h., <em>e<sup>x</sup></em>, wobei <em>e</em> die Eulersche Zahl ist.<br>
+    log(x): Berechnet den natürlichen Logarithmus von <em>x</em>.<br>
+    pow(x, y): Berechnet <em>x</em> hoch <em>y</em>, d.h., <em>x<sup>y</sup></em>.<br>
+    sqrt(x): Berechnet die Quadratwurzel von <em>x</em>.<br>
+    fabs(x): Berechnet den absoluten Wert von <em>x</em>, unabhängig von seinem Vorzeichen.<br>
+    ceil(x): Rundet <em>x</em> auf die nächstgrößere Ganzzahl auf.<br>
+    floor(x): Rundet <em>x</em> auf die nächstkleinere Ganzzahl ab.<br>
+    fmod(x, y): Berechnet den Rest der Division von <em>x</em> durch <em>y</em> als Gleitkommazahl.</p>

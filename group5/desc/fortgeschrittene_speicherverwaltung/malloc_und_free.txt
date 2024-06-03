@@ -1,0 +1,21 @@
+    Die Funktion <code>malloc</code> in C wird verwendet, um dynamisch Speicherplatz während der Laufzeit eines Programms zuzuweisen.<br>
+    <br>
+    Syntax:<br>
+    <code>void* malloc(size_t size);</code><br>
+    <br>
+    Beispiel:<br>
+    <code>int* ptr = (int*) malloc(5 * sizeof(int));</code><br>
+    <br>
+    Diese Zeile reserviert Speicherplatz für ein Array von 5 Ganzzahlen und gibt einen Zeiger auf den ersten Speicherplatz zurück.<br>
+    <br>
+    Die Funktion <code>free</code> wird verwendet, um dynamisch allokierten Speicherplatz freizugeben und ihn für andere Zwecke verfügbar zu machen.<br>
+    <br>
+    Syntax:<br>
+    <code>void free(void* ptr);</code><br>
+    <br>
+    Beispiel:<br>
+    <code>free(ptr);</code><br>
+    <br>
+    Diese Zeile gibt den Speicherplatz frei, der zuvor mit <code>malloc</code> reserviert wurde und durch den Zeiger <code>ptr</code> referenziert wird.<br>
+    <br>
+    Die Verwendung von <code>malloc</code> und <code>free</code> ermöglicht eine effiziente Verwaltung des Speicherplatzes während der Laufzeit eines C-Programms.<br>
