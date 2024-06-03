@@ -1,0 +1,24 @@
+CLOUDSHELL:
+https://cloud.google.com
+
+GIT-BEFEHLE:
+Einmalige Einrichtung:
+git config –-global user.email „github email adresse“
+git config –-global user.name „user name“
+
+
+Lokales Git Repository erstellen (nicht extrem relevant):
+git init .
+
+Remote Repository Klonen:
+git clone https://github.com/AhmedSahr/webseite
+
+Code Änderungen hinzufügen:
+git add .
+
+Code hochladen:
+git push –u origin main
+
+SERVER-BEFEHLE
+Server im Terminal starten:
+php –S 127.0.0.1:8080
