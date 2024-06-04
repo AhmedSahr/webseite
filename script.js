@@ -31,7 +31,7 @@ function addTimeoutEvent(elem) {
 }
 
 group1.addEventListener("click", () => {
-  location.href = "./group1/card1.html";
+  location.href = "./group1/card1.html"; 
 })
 
 group2.addEventListener("click", () => {
@@ -41,3 +41,6 @@ group2.addEventListener("click", () => {
 group4.addEventListener("click", () => {
   location.href = "./group4/index.html"
 })
+group3.addEventListener("click", () => {
+    location.href = "./group3/amazing-responsive-slider/dist/index.html"
+  })
