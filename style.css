@@ -182,7 +182,8 @@ p {
 .group h1 {
   margin-top: -0.5em;
   font-size: 3em;
-  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 
@@ -192,7 +193,7 @@ p {
 }
 
 .group:hover h1 {
-  color: white;
+  color: rgb(2, 248, 133);
 }
 
 .group:hover span {

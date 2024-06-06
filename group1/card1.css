@@ -12,7 +12,8 @@ body {
   align-items: center;
   height: 100vh;
   font-family: sans-serif;
-  background-color:gray;
+  background-image: url("./Bilder/hintergrundbildIT-Projekte.jpg");
+  background-size: cover;
 }
 
 .main {

@@ -55,7 +55,7 @@ var testiomnialData = [
         review: "Meine erste IT Erfahrung war das Upgraden meiner Hardware auf meinem PC und die Erneuerung der Wärmeleitpaste"
     },
     {
-        avatar: "./bilder_ausbildung/apor.png",
+        avatar: "./bilder_ausbildung/hintergrundbildIT-Projekte.jpg",
         name: "Francisco",
         review: "Dass ich ein Retard bin, ist doch common knowledge"
     },
