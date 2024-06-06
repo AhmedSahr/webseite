@@ -1,18 +1,18 @@
 var testiomnialData = [
     {
-        avatar: "./bilder_ausbildung/pngegg(19).png",
+        avatar: "./bilder_ausbildung/lenni.jpg",
         name: "Lennart",
-        review: "Miriam, wo bist du?"
+        review: "Ich programmierte eine Website und sah, wie meine Ideen lebendig wurden. Jeder Code führte zu sichtbaren Ergebnissen. Diese Erfolgserfahrung zeigte mir die kreative Kraft der IT und weckte meine Leidenschaft, weiter in die Technologie einzutauchen."
     },
     {
         avatar: "./bilder_ausbildung/pngegg(17).png",
         name: "Alhasan",
-        review: "Okay okay"
+        review: "Während meiner Ausbildung habe ich umfassende Kenntnisse in den Bereichen Programmierung, Netzwerksicherheit und Datenanalyse erworben. Die praxisorientierten Projekte und die enge Zusammenarbeit mit erfahrenen Lehrern haben mein technisches Verständnis und meine Problemlösungsfähigkeiten erheblich verbessert."
     },
     {
         avatar: "./bilder_ausbildung/pngegg(16).png",
         name: "Jonas",
-        review: "Katze"
+        review: "Meine erste IT Erfahrung habe ich gemacht, als ich den PC meiner Eltern aufgeschraubt habe und da rumexperimentierte"
     },
     {
         avatar: "./bilder_ausbildung/khabib.png",
@@ -22,7 +22,7 @@ var testiomnialData = [
     {
         avatar: "./bilder_ausbildung/pngegg(15).png",
         name: "Okba",
-        review: "Light weight baby"
+        review: "Seit drei Jahren sammle ich wertvolle IT-Erfahrungen, seitdem ich meine Ausbildung bei Campus Berlin begonnen habe. Während dieser Zeit habe ich umfassende Kenntnisse in verschiedenen Bereichen der Informationstechnologie erworben, einschließlich Netzwerktechnik, Softwareentwicklung und IT-Support"
     },
     {
         avatar: "./bilder_ausbildung/pngegg(14).png",
@@ -42,7 +42,7 @@ var testiomnialData = [
     {
         avatar: "./bilder_ausbildung/silverhand.png",
         name: "Florian",
-        review: "Ich bin Fabian"
+        review: "Meine erste Erfahrung mit IT war, als ich Komponenten meines PCs ausgetauscht habe."
     },
     {
         avatar: "./bilder_ausbildung/pngegg(12).png",
@@ -50,9 +50,9 @@ var testiomnialData = [
         review: "El psy kongroo"
     },
     {
-        avatar: "./bilder_ausbildung/pngegg(18).png",
+        avatar: "./bilder_ausbildung/pngegg(20).png",
         name: "Ilja",
-        review: "Wonderfull Ilja, if you want to have a wonderfull outline, go to Ilja"
+        review: "Meine erste IT Erfahrung war das Upgraden meiner Hardware auf meinem PC und die Erneuerung der Wärmeleitpaste"
     },
     {
         avatar: "./bilder_ausbildung/apor.png",
@@ -62,16 +62,16 @@ var testiomnialData = [
     {
         avatar: "./bilder_ausbildung/pngegg(10).png",
         name: "Fedor",
-        review: "Bin am Schlafen"
+        review: "ich als übel verpennte Person, hatte meine erste Berührung mit IT, als ich damals mit einem Kumpel den PC gecrackt habe und eins hat dann zum anderem geführt und jetzt bin ich hier"
     },
     {
         avatar: "./bilder_ausbildung/snoppy.png",
         name: "Alexander",
-        review: "In Thailand, bin ja Einserschüler"
+        review: "Als ich 13 Jahre alt war, habe ich mein Android-Handy gerootet, um mobile Spiele zu hacken. Die Nächte verbrachte ich damit, Foren zu durchforsten und Anleitungen zu folgen. Es war aufregend und hat meine Leidenschaft für Technologie geweckt."
     }, {
         avatar: "./bilder_ausbildung/pngegg(8).png",
         name: "Oliver",
-        review: "Ich brauch Chayas und Geld, nicht das Wissen"
+        review: "Mein erster Kontakt mit der IT trat damals mit meinem Onkel auf als wir eine Festplatte mit Wii Spielen auf die Konsole überspielt haben. Dies war kostengünstiger als die Spiele aus dem Laden zu holen. Somit haben wir pro Spiel 1 Euro bezahlt."
     }]
 var slideHolder = document.querySelector("#slideHolder")
 for (let i of testiomnialData) slideHolder.innerHTML += `<div class="swiper-slide"> <div class="ImgHolder"><img src="${i.avatar}"></div><div class="ContentHolder"><h3>${i.name}</h3><p>${i.review}</p></div></div>`
@@ -92,7 +92,7 @@ const swiper = new Swiper('#craouselContainer', {
         el: '.swiper-pagination',
         clickable: true
     },
-    autoplay: { delay: 500 }
+    autoplay: { delay: 1500 }
 });
 window.onresize = queryResizer
 queryResizer()

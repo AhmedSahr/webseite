@@ -42,5 +42,5 @@ group4.addEventListener("click", () => {
   location.href = "./group4/index.html"
 })
 group3.addEventListener("click", () => {
-    location.href = "./group3/amazing-responsive-slider/dist/index.html"
+    location.href = "./group3/amazing-responsive-slider/card-hover-interactions/dist/index.html"
   })
