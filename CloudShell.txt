@@ -1,8 +1,11 @@
+Einmalige Einrichtung (GitHub):
+Token erstellen: 
+Setting --> Developer Settings --> Personal access tokens --> token (classic) -->generate a personal access token
+
 CLOUDSHELL:
 https://cloud.google.com
-
 GIT-BEFEHLE:
-Einmalige Einrichtung:
+
 git config –-global user.email „github email adresse“
 git config –-global user.name „user name“
 
