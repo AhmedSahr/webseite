@@ -19,6 +19,9 @@ git clone https://github.com/AhmedSahr/webseite
 Code Änderungen hinzufügen:
 git add .
 
+git commit --m "Ihre Nachrricht"
+
+
 Code hochladen:
 git push –u origin main
 
