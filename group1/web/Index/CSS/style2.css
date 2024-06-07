@@ -67,3 +67,12 @@ body {
 .card__btn:hover {
     background-color: #45a049;
 }
+
+.Header {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 80px;
+    border-radius: 5px;
+    background-color: white;
+    
+}

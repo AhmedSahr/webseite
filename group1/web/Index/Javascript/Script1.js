@@ -12,13 +12,13 @@ function checkGuess() {
     }
    
     if (userGuess < secretNumber) {
-        resultElement.innerHTML = "Die Zahl ist zu niedrig! <img src='DaumenRunter.png'>";
+        resultElement.innerHTML = "Die Zahl ist zu niedrig! <img src='Bilder/DaumenRunter.png'>";
         resultElement.className = "result failure";
     } else if (userGuess > secretNumber) {
-        resultElement.innerHTML = "Die Zahl ist zu hoch! <img src='DaumenHoch.png'>";
+        resultElement.innerHTML = "Die Zahl ist zu hoch! <img src='Bilder/DaumenHoch.png'>";
         resultElement.className = "result failure";
     } else {
-        resultElement.innerHTML = "Richtig! Du hast die Zahl erraten! <img src='Richtig.png'>";
+        resultElement.innerHTML = "Richtig! Du hast die Zahl erraten! <img src='Bilder/Richtig.png'>";
         resultElement.className = "result success";
     }
 }
