@@ -19,6 +19,9 @@ git add .
 Code hochladen:
 git push –u origin main
 
+Code runterladen
+git pull --rebase
+
 SERVER-BEFEHLE
 Server im Terminal starten:
 php -S 127.0.0.1:8080
