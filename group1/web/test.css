@@ -19,14 +19,14 @@
 
 
 .content .section {
-  background-image: url(https://aweos.de/wp-content/uploads/2020/10/webentwicklung.png);
+  background-image: url(./Bilder/2.png);
   width: 100%;
   height: 100vh;
   background-size: cover;
 }
 
 .ye {
-  background-image: url(https://wallpapers.com/images/hd/website-background-sdki780prxb1nfs5.jpg);
+  background-image: url(./Bilder/3.png);
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -37,7 +37,7 @@
   */
   /*background-image: url(https://images3.alphacoders.com/132/thumb-1920-1322308.jpeg);*/
  /*background-image: url(https://i.kym-cdn.com/photos/images/original/001/479/169/c57.gif);*/
- background-image: url(https://staticg.sportskeeda.com/editor/2023/07/a4550-16904894592297-1920.jpg);
+ background-image: url(./Bilder/1.png);
   
   background-position: center center;
   background-repeat: no-repeat;
