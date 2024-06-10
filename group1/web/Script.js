@@ -36,3 +36,4 @@ function resetAutoplay() {
   clearInterval(autoplayInterval);
   autoplayInterval = setInterval(moveCard, 4000);
 }
+
