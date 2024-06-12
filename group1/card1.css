@@ -168,6 +168,14 @@ html, body {
   margin-top: -187px;
 }
 
+.button-container {
+  display: flex; /* Flexbox verwenden */
+}
+
+.btn {
+  margin-right: 10px; /* Abstand zwischen den Buttons */
+}
+
 #preloaderDiv {
   position: absolute;
   left: 50%;

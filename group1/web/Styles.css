@@ -95,6 +95,18 @@ main {
   user-select: none;
   -webkit-user-select: none;
   pointer-events: auto;
+  margin: 10px;
+}
+
+ul {
+  float: left;
+}
+li {
+  float:left;
+  font-style: none;
+  list-style: none;
+  padding-left: 30px;
+  
 }
 
 .btn:hover {
